@@ -1,43 +1,43 @@
 # Neuro-Symbolic Path Planning: PRM vs. CNN
 
-This repository contains the dataset, code, and results for the paper **"An Experimental Report on Comparative Evaluation of Probabilistic Roadmap and Convolutional Neural Network Approaches for Autonomous Path Planning."** The project evaluates the performance of Probabilistic Roadmaps (PRM) and a Neuro-Symbolic CNN-based path-planning approach in simulated autonomous navigation tasks.
+This repository contains the dataset, code, and results for the comparative evaluation of Probabilistic Roadmaps (PRM) and a Neuro-Symbolic Convolutional Neural Network (CNN) approach for autonomous path planning. This study explores the integration of CNN adaptability with symbolic safety rules, showcasing improvements in safety, adaptability, and computational efficiency over traditional PRM methods.
 
 ---
 
-## **Overview**
-Path planning is a crucial aspect of autonomous navigation. This project compares:
-1. **PRM**: A static graph-based approach for path planning.
-2. **Neuro-Symbolic CNN**: A hybrid model combining Convolutional Neural Networks (CNNs) for adaptability with symbolic safety rules for enhanced obstacle avoidance.
-
-The results demonstrate the advantages of the Neuro-Symbolic approach in dynamic environments, achieving better safety and computational efficiency.
+## **Project Summary**
+- **Objective**: To evaluate the performance of PRM and Neuro-Symbolic CNN in simulated autonomous navigation tasks.
+- **Key Features**:
+  - Combines the adaptability of CNNs with symbolic safety rules.
+  - Conducted in MATLAB simulation environments with binary occupancy maps.
+  - Assesses metrics like path length, computation time, and obstacle avoidance efficiency.
 
 ---
 
 ## **Repository Structure**
-- **`data/`**: Contains input data files:
+- **`data/`**: Datasets used in the simulations:
+  - `complex_map.mat`: Binary occupancy map for the environment.
   - `lidar_sensor_data.mat`: Simulated Lidar sensor readings.
-  - `complex_map.mat`: Binary occupancy map used for simulations.
 - **`code/`**: MATLAB scripts for experiments:
-  - `prm_path_planning.m`: PRM-based path planning.
+  - `prm_path_planning.m`: Implements PRM-based path planning.
   - `neuro_symbolic_cnn.m`: Neuro-Symbolic CNN framework.
-  - `evaluate_results.m`: Code for computing metrics (path length, computation time, obstacle avoidance).
-- **`results/`**: Figures and tables from the experiments:
-  - `prm_graph.jpg`: PRM graph visualizations.
-  - `cnn_path.jpg`: Neuro-Symbolic CNN path visualizations.
-  - `comparison_table.csv`: Results in tabular format.
-- **`README.md`**: Repository documentation.
-- **`LICENSE`**: Licensing information for data/code usage.
+  - `evaluate_results.m`: Computes performance metrics.
+- **`results/`**: Output figures and performance comparison tables.
+  - `prm_graph.jpg`: Visualization of PRM paths.
+  - `cnn_path.jpg`: Visualization of CNN paths.
+  - `comparison_table.csv`: Detailed performance metrics.
+- **`README.md`**: Documentation for the repository.
+- **`LICENSE`**: License file for usage rights.
 
 ---
 
-## **Usage**
-### **Prerequisites**
-- MATLAB (R2022b or later) with the following toolboxes:
+## **Installation and Usage**
+### **Requirements**
+- MATLAB (R2022b or later) with:
   - Robotics System Toolbox
   - Deep Learning Toolbox
 
-### **Running the Code**
+### **Steps to Run**
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/neuro-symbolic-path-planning.git
+   git clone https://github.com/Shahrouz-vakili/neuro-symbolic-path-planning.git
    cd neuro-symbolic-path-planning
